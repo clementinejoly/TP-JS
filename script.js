@@ -121,63 +121,76 @@ maDiv.style.backgroundColor = "blue";
 });
 
 // 1 ajouter un P
-MaVariable = document.getElementById('ajoutP');
-MaVariable.addEventListener("click",
-function(){
-monAction = document.getElementById('ajoutP');
-monAction.innerHTML = "Paragraph changed!";
-});
+// MaVariable = document.getElementById('ajoutP');
+// MaVariable.addEventListener("click",
+// function(){
+// monAction = document.getElementById('ajoutP');
+// monAction.innerHTML = "Paragraph changed!";
+// });
 
 // 2 changement de couleur
-MaVariable = document.getElementById('ajoutP');
-MaVariable.addEventListener("click",
-function(){
-monAction = document.getElementById('ajoutP');
-monAction.style.backgroundColor = 'blue';
-});
+// MaVariable = document.getElementById('ajoutP');
+// MaVariable.addEventListener("click",
+// function(){
+// monAction = document.getElementById('ajoutP');
+// monAction.style.backgroundColor = 'blue';
+// });
 
 // 3 supp elt
-MaVariable = document.getElementById('suppP');
-MaVariable.addEventListener("click",
-function(){
-monAction = document.getElementById('suppP');
-monAction.remove() = 'magique';
-});
+// MaVariable = document.getElementById('suppP');
+// MaVariable.addEventListener("click",
+// function(){
+// monAction = document.getElementById('suppP');
+// monAction.remove();
+// });
 
 // 4 ajout de li
-MaVariable = document.getElementById('ajoutDeLi');
-MaVariable.addEventListener("click",
-function(){
-    var node = document.createElement("LI");               
-    var textnode = document.createTextNode("liste 3");         
-    node.appendChild(textnode);                             
-    document.getElementById("ajoutDeLi").appendChild(node);
-});
+// MaVariable = document.getElementById('ajoutDeLi');
+// MaVariable.addEventListener("click",
+// function(){
+//     var node = document.createElement("LI");               
+//     var textnode = document.createTextNode("liste 3");         
+//     node.appendChild(textnode);                             
+//     document.getElementById("ajoutDeLi").appendChild(node);
+// });
 
 // 5.1 avec mouseover/mouseout
-MaVariable = document.getElementById('ajoutPa');
-MaVariable.addEventListener("mouseover", mouseOver);
-function mouseOver(){
-monAction = document.getElementById('ajoutPa');
-monAction.innerHTML = "Paragraph changed!";
-};
-
-MaVariable.addEventListener("mouseout", mouseOut);
-function mouseOut(){
-    monAction = document.getElementById('ajoutPa');
-    monAction.innerHTML = "je vais ajouter une ligne en passant la souris dessus";
-    };
-
-// 5.2 avec mouseover/mouseout
-// MaVariable = document.getElementById('ajoutPb');
+// MaVariable = document.getElementById('ajoutPa');
 // MaVariable.addEventListener("mouseover", mouseOver);
 // function mouseOver(){
-// monAction = document.getElementById('ajoutPb');
-// monAction.style.backgroundColor = 'blue';
+// monAction = document.getElementById('ajoutPa');
+// monAction.innerHTML = "Paragraph changed!";
 // };
 
 // MaVariable.addEventListener("mouseout", mouseOut);
 // function mouseOut(){
-//     monAction = document.getElementById('ajoutPb');
-//     monAction.style.backgroundColor = 'green';
+//     monAction = document.getElementById('ajoutPa');
+//     monAction.innerHTML = "je vais ajouter une ligne en passant la souris dessus";
+//     };
+
+// 5.2 avec mouseover/mouseout (mettre en commentaire pour ke le 5.1 fonctionne)
+// MaVariableA = document.getElementById('changement-couleur');
+// MaVariableA.addEventListener("mouseover", mouseOver);
+// function mouseOver(){
+// monActionA = document.getElementById('changement-couleur');
+// monActionA.style.backgroundColor = 'blue';
 // };
+
+// MaVariableA.addEventListener("mouseout", mouseOut);
+// function mouseOut(){
+//     monActionA = document.getElementById('changement-couleur');
+//     monActionA.style.backgroundColor = 'green';
+// };
+
+// 5.3 avec mouseover/mouseout (mettre en commentaire pour ke le 5.1 fonctionne)
+MaVariableB = document.getElementById('suppPa');
+MaVariableB.addEventListener("mouseover", mouseOver);
+function mouseOver(){
+monActionB = document.getElementById('suppPa');
+monActionB.remove();
+};
+
+MaVariableB.addEventListener("mouseout", mouseOut);
+function mouseOut(){
+    monActionB = document.getElementById('suppPa');
+};
