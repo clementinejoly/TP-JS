@@ -120,5 +120,20 @@ maDiv.style.backgroundColor = "blue";
 
 });
 
+// 1 ajouter un P
+MaVariable = document.getElementById('ajoutP');
+MaVariable.addEventListener("click",
+function(){
+monAction = document.getElementById('ajoutP');
+monAction.innerHTML = "Paragraph changed!";
+});
+
+// 1 ajouter un P
+MaVariable = document.getElementById('ajoutP');
+MaVariable.addEventListener("click",
+function(){
+monAction = document.getElementById('ajoutP');
+monAction.innerHTML = "Paragraph changed!";
+});
 
 
