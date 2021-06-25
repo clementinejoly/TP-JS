@@ -183,14 +183,32 @@ maDiv.style.backgroundColor = "blue";
 // };
 
 // 5.3 avec mouseover/mouseout (mettre en commentaire pour ke le 5.1 fonctionne)
-MaVariableB = document.getElementById('suppPa');
-MaVariableB.addEventListener("mouseover", mouseOver);
+// MaVariableB = document.getElementById('suppPa');
+// MaVariableB.addEventListener("mouseover", mouseOver);
+// function mouseOver(){
+// monActionB = document.getElementById('suppPa');
+// monActionB.remove();
+// };
+
+// MaVariableB.addEventListener("mouseout", mouseOut);
+// function mouseOut(){
+//     monActionB = document.getElementById('suppPa');
+// };
+
+// 5.4 avec mouseover/mouseout (mettre en commentaire les autes pour que ca fonctionne)
+MaVariableC = document.getElementById('ajoutDeLia');
+MaVariableC.addEventListener("mouseover", mouseOver)
 function mouseOver(){
-monActionB = document.getElementById('suppPa');
-monActionB.remove();
+    var node = document.createElement("LI");               
+    var textnode = document.createTextNode("liste 3");         
+    node.appendChild(textnode);                             
+    document.getElementById("ajoutDeLia").appendChild(node);
 };
 
-MaVariableB.addEventListener("mouseout", mouseOut);
+MaVariableC.addEventListener("mouseout", mouseOut)
 function mouseOut(){
-    monActionB = document.getElementById('suppPa');
+    var node = document.createElement("LI");               
+    var textnode = document.createTextNode("liste 3");         
+    node.appendChild(textnode);                             
+    document.getElementById("ajoutDeLia").appendChild(node);
 };
