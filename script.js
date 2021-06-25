@@ -136,9 +136,21 @@ monAction = document.getElementById('ajoutP');
 monAction.style.backgroundColor = 'blue';
 });
 
-// function essaiOnclick(){
-//     changer = document.getElementById ('essai');
-//     changer.style.backgroundColor = 'blue';
-//     }
+// 2 changement de couleur
+MaVariable = document.getElementById('ajoutP');
+MaVariable.addEventListener("click",
+function(){
+monAction = document.getElementById('ajoutP');
+monAction.style.backgroundColor = 'blue';
+});
+
+// 3 supp elt
+MaVariable = document.getElementById('ajoutP');
+MaVariable.addEventListener("click",
+function(){
+monAction = document.getElementById('ajoutP');
+monAction.style.backgroundColor = 'blue';
+});
+
 
 
