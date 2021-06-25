@@ -145,22 +145,39 @@ monAction.remove() = 'magique';
 });
 
 // 4 ajout de li
-MaVariable = document.createElement("LI");
+MaVariable = document.getElementById('ajoutDeLi');
 MaVariable.addEventListener("click",
 function(){
-monAction = document.createTextNode("liste 3");
-monAction.node.appendChild(textnode);
-document.getElementById("ajoutDeLi").appendChild(node);
-});
-
-function essaiOnclick2(){    
     var node = document.createElement("LI");               
     var textnode = document.createTextNode("liste 3");         
     node.appendChild(textnode);                             
-    document.getElementById("try").appendChild(node);
-}
+    document.getElementById("ajoutDeLi").appendChild(node);
+});
 
+// 5.1 avec mouseover/mouseout
+MaVariable = document.getElementById('ajoutPa');
+MaVariable.addEventListener("mouseover", mouseOver);
+function mouseOver(){
+monAction = document.getElementById('ajoutPa');
+monAction.innerHTML = "Paragraph changed!";
+};
 
+MaVariable.addEventListener("mouseout", mouseOut);
+function mouseOut(){
+    monAction = document.getElementById('ajoutPa');
+    monAction.innerHTML = "je vais ajouter une ligne en passant la souris dessus";
+    };
 
+// 5.2 avec mouseover/mouseout
+// MaVariable = document.getElementById('ajoutPb');
+// MaVariable.addEventListener("mouseover", mouseOver);
+// function mouseOver(){
+// monAction = document.getElementById('ajoutPb');
+// monAction.style.backgroundColor = 'blue';
+// };
 
-
+// MaVariable.addEventListener("mouseout", mouseOut);
+// function mouseOut(){
+//     monAction = document.getElementById('ajoutPb');
+//     monAction.style.backgroundColor = 'green';
+// };
