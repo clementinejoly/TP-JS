@@ -136,21 +136,31 @@ monAction = document.getElementById('ajoutP');
 monAction.style.backgroundColor = 'blue';
 });
 
-// 2 changement de couleur
-MaVariable = document.getElementById('ajoutP');
+// 3 supp elt
+MaVariable = document.getElementById('suppP');
 MaVariable.addEventListener("click",
 function(){
-monAction = document.getElementById('ajoutP');
-monAction.style.backgroundColor = 'blue';
+monAction = document.getElementById('suppP');
+monAction.remove() = 'magique';
 });
 
-// 3 supp elt
-MaVariable = document.getElementById('ajoutP');
+// 4 ajout de li
+MaVariable = document.createElement("LI");
 MaVariable.addEventListener("click",
 function(){
-monAction = document.getElementById('ajoutP');
-monAction.style.backgroundColor = 'blue';
+monAction = document.createTextNode("liste 3");
+monAction.node.appendChild(textnode);
+document.getElementById("ajoutDeLi").appendChild(node);
 });
+
+function essaiOnclick2(){    
+    var node = document.createElement("LI");               
+    var textnode = document.createTextNode("liste 3");         
+    node.appendChild(textnode);                             
+    document.getElementById("try").appendChild(node);
+}
+
+
 
 
 
