@@ -128,12 +128,17 @@ monAction = document.getElementById('ajoutP');
 monAction.innerHTML = "Paragraph changed!";
 });
 
-// 1 ajouter un P
+// 2 changement de couleur
 MaVariable = document.getElementById('ajoutP');
 MaVariable.addEventListener("click",
 function(){
 monAction = document.getElementById('ajoutP');
-monAction.innerHTML = "Paragraph changed!";
+monAction.style.backgroundColor = 'blue';
 });
+
+// function essaiOnclick(){
+//     changer = document.getElementById ('essai');
+//     changer.style.backgroundColor = 'blue';
+//     }
 
 
